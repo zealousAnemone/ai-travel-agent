@@ -33,7 +33,7 @@ async function getAmadeusAccessToken(clientId, clientSecret) {
       return response.data;
     } catch (error) {
       if (error.response) {
-        console.error(response.data.errors);
+        console.error(error.response.data.errors);
         return "Error";
       }
     }  
